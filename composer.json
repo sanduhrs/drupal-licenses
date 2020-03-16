@@ -1,0 +1,14 @@
+{
+    "name": "drupal/licenses",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Stefan Auditor",
+            "email": "stefan.auditor@erdfisch.de"
+        }
+    ],
+    "require": {
+        "": "^1.5"
+    }
+}

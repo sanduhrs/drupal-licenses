@@ -1,0 +1,7 @@
+licences.reports:
+  path: '/admin/reports/licenses'
+  defaults:
+    _title: 'Licenses'
+    _controller: '\Drupal\licenses\Controller\LicensesController::build'
+  requirements:
+    _permission: 'access site reports'

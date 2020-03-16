@@ -1,0 +1,6 @@
+name: Licenses
+type: module
+description: The description.
+package: Licenses
+core: 8.x
+core_version_requirement: ^8 || ^9
