@@ -1,0 +1,4 @@
+services:
+  plugin.manager.license:
+    class: Drupal\licenses\LicensePluginManager
+    parent: default_plugin_manager

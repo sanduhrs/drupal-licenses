@@ -9,6 +9,8 @@
         }
     ],
     "require": {
-        "": "^1.5"
+        "ext-dom": "*",
+        "ext-json": "*",
+        "composer/spdx-licenses": "^1.5"
     }
 }

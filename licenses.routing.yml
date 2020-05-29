@@ -4,4 +4,4 @@ licences.reports:
     _title: 'Licenses'
     _controller: '\Drupal\licenses\Controller\LicensesController::build'
   requirements:
-    _permission: 'access site reports'
+    _permission: 'access site licenses'

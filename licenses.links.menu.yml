@@ -1,0 +1,5 @@
+licences.reports:
+  title: 'Licenses report'
+  parent: system.admin_reports
+  description: "Get an overview of the site's licenses usage."
+  route_name: licences.reports

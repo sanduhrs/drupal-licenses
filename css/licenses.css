@@ -1,4 +1,5 @@
-.preformatted {
+.licenses--license-text {
   font-family: monospace;
-  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
