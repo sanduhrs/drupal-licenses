@@ -52,16 +52,12 @@ class LicensesController extends ControllerBase {
     $build['overview'] = [
       '#type' => 'fieldset',
       '#title' => $this->t('Licences overview'),
-    ];
-    $build['overview']['description'] = [
-      '#markup' => '<p>' . $this->t('The following table provides an overview of the used licenses in this software.') . '</p>',
+      '#markup' => '<p>' . $this->t('The following table provides an overview of the used licenses in this software and whether they are approved by the <a href="https://opensource.org/">Open Source Initiative</a> (OSI) to conform to the <a href="https://opensource.org/docs/osd">Open Source Definition</a> and provide software freedom.') . '</p>',
     ];
 
     $build['license'] = [
       '#type' => 'fieldset',
       '#title' => $this->t('Libraries and licences'),
-    ];
-    $build['license']['description'] = [
       '#markup' => '<p>' . $this->t("A list of all used libraries in this software with it's associated license grouped by license identifier.") . '</p>',
     ];
 
@@ -99,7 +95,7 @@ class LicensesController extends ControllerBase {
           'data' => Link::fromTextAndUrl($this->t('Toggle license text'), Url::fromUserInput('#')),
           'class' => ['licenses--full-license-link'],
         ],
-        $license->getUri() ? Link::fromTextAndUrl($this->t('Got to license'), Url::fromUri($license->getUri(), ['external' => TRUE])) : '',
+        $license->getUri() ? Link::fromTextAndUrl($this->t('Go to license'), Url::fromUri($license->getUri(), ['external' => TRUE])) : '',
       ];
 
       if (!isset($this->licenseDetails[$license->getIdentifier()])) {
